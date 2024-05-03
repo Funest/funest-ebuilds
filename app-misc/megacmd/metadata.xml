@@ -8,6 +8,5 @@
     <use>
         <flag name="freeimage">Enable usage of FreeImage</flag>
         <flag name="mediainfo">Enable usage of libmediainfo</flag>
-        <flag name="sodium">Enable usage of libsodium</flag>
     </use>
 </pkgmetadata>
