@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="person">
+        <email>guilheparente@gmail.com</email>
+        <name>Guilherme Félix</name>
+    </maintainer>
+    <use>
+        <flag name="freeimage">Enable usage of FreeImage</flag>
+        <flag name="mediainfo">Enable usage of libmediainfo</flag>
+        <flag name="sodium">Enable usage of libsodium</flag>
+    </use>
+</pkgmetadata>
