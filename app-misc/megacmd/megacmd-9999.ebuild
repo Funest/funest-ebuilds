@@ -7,9 +7,8 @@ EGIT_REPO_URI="https://github.com/meganz/MEGAcmd"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64"
 
-IUSE="ffmpeg pcre udev ssl sqlite freeimage raw mediainfo"
+IUSE="ffmpeg pcre udev ssl sqlite freeimage raw mediainfo test"
 
 DEPEND="
 		net-misc/curl
@@ -25,8 +24,11 @@ DEPEND="
 		freeimage? ( media-libs/freeimage )
 		raw? ( media-libs/libraw )
 		mediainfo? ( media-libs/libmediainfo )
+		test? ( dev-cpp/gtest )
 "
 RDEPEND="${DEPEND}"
+
+RESTRICT="!test? ( test )"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-sdk-codec.patch
@@ -47,8 +49,4 @@ src_configure() {
 		$(use_with raw libraw) \
 		--infodir=/usr/share/info \
 		--mandir=/usr/share/man || die
-}
-
-src_test() {
-	echo "Tests disabled due to issues with gtest during experimental ebuild installation"
 }
