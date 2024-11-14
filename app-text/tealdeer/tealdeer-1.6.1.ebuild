@@ -198,7 +198,7 @@ IUSE="logging"
 # Tealdeer lists no runtime dependencies
 #RDEPEND=""
 
-BDEPEND="virtual/rust"
+BDEPEND="dev-lang/rust"
 
 src_configure() {
 	local myfeatures=(

@@ -149,7 +149,7 @@ RDEPEND="x11-libs/libXScrnSaver
 		 x11-libs/libxcb
 		 pulseaudio? ( media-libs/libpulse ) "
 
-BDEPEND="virtual/rust"
+BDEPEND="dev-lang/rust"
 
 src_configure() {
 	local myfeatures=(
