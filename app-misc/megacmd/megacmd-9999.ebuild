@@ -30,10 +30,6 @@ RDEPEND="${DEPEND}"
 
 RESTRICT="!test? ( test )"
 
-PATCHES=(
-	"${FILESDIR}"/${P}-sdk-codec.patch
-)
-
 src_prepare() {
 	default
 	eautoreconf
